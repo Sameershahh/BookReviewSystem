@@ -1,0 +1,261 @@
+/* Light Mode (Default) */
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Dark Mode Navbar */
+body.dark-mode .navbar {
+    background-color: #1f1f1f !important;
+}
+
+/* Dark Mode Cards */
+body.dark-mode .card {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+/* Dark Mode Buttons */
+body.dark-mode .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+body.dark-mode .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+/* Dark Mode Links */
+body.dark-mode a {
+    color: #007bff;
+}
+
+/* Dark Mode Images */
+body.dark-mode img {
+    filter: brightness(0.8);
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #ffffff;
+    }
+}
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+/* Light Mode (Default) */
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Navbar Styles for Light Mode */
+.navbar {
+    background-color: #e3f2fd !important; /* Light blue background */
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #000000 !important; /* Black text for light mode */
+}
+
+/* Navbar Styles for Dark Mode */
+body.dark-mode .navbar {
+    background-color: #1f1f1f !important; /* Dark background */
+}
+
+body.dark-mode .navbar .navbar-brand,
+body.dark-mode .navbar .nav-link {
+    color: #ffffff !important; /* White text for dark mode */
+}
+
+/* Dark Mode Cards */
+body.dark-mode .card {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+/* Dark Mode Buttons */
+body.dark-mode .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+body.dark-mode .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+/* Dark Mode Links */
+body.dark-mode a {
+    color: #007bff;
+}
+
+/* Dark Mode Images */
+body.dark-mode img {
+    filter: brightness(0.8);
+}
+/* Light Mode (Default) */
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Navbar Styles for Light Mode */
+.navbar {
+    background-color: #e3f2fd !important; /* Light blue background */
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #000000 !important; /* Black text for light mode */
+}
+
+/* Navbar Styles for Dark Mode */
+body.dark-mode .navbar {
+    background-color: #1f1f1f !important; /* Dark background */
+}
+
+body.dark-mode .navbar .navbar-brand,
+body.dark-mode .navbar .nav-link {
+    color: #ffffff !important; /* White text for dark mode */
+}
+
+/* Button Styles for Light Mode */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #ffffff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #ffffff;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #000000;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #ffffff;
+}
+
+/* Button Styles for Dark Mode */
+body.dark-mode .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #ffffff;
+}
+
+body.dark-mode .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #ffffff;
+}
+
+body.dark-mode .btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #000000;
+}
+
+body.dark-mode .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #ffffff;
+}
+
+/* Dark Mode Cards */
+body.dark-mode .card {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+/* Dark Mode Links */
+body.dark-mode a {
+    color: #007bff;
+}
+
+/* Dark Mode Images */
+body.dark-mode img {
+    filter: brightness(0.8);
+}   
+body.dark-mode .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+body.dark-mode .btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #5a6268;
+}
+
+body.dark-mode .btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #e0a800;
+}
+
+body.dark-mode .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+}
+
+body.dark-mode .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+body.dark-mode .btn-secondary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+}
+
+body.dark-mode .btn-warning:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+}
+
+body.dark-mode .btn-danger:focus {
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+}
+body.dark-mode .btn-primary:disabled {
+    background-color: #004080;
+    border-color: #004080;
+}
+
+body.dark-mode .btn-secondary:disabled {
+    background-color: #4a5258;
+    border-color: #4a5258;
+}
+
+body.dark-mode .btn-warning:disabled {
+    background-color: #b38f00;
+    border-color: #b38f00;
+}
+
+body.dark-mode .btn-danger:disabled {
+    background-color: #a71d2a;
+    border-color: #a71d2a;
+}

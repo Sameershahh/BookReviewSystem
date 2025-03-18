@@ -1,0 +1,15 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Books{% endblock %}
+
+{% block body %}
+<h1>Book List</h1>
+<a href="{% url 'add_book' %}" class="btn btn-primary mb-3">Add Book</a>
+<div class="list-group">
+    {% for book in books %}
+    <a href="{% url 'book_detail' book.pk %}" class="list-group-item list-group-item-action">
+        {{ book.title }} by {{ book.author }}
+    </a>
+    {% endfor %}
+</div>
+{% endblock %}

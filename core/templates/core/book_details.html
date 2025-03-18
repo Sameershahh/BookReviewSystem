@@ -1,0 +1,38 @@
+{% extends 'core/base.html' %}
+
+{% block title %}{{ book.title }}{% endblock %}
+
+{% block body %}
+<div class="container mt-4">
+    <!-- Book Title -->
+    <h1 id="book-title">{{ book.title }}</h1>
+
+    <!-- Author -->
+    <p><strong>Author:</strong> <span id="book-author">{{ book.author }}</span></p>
+
+    <!-- Genre -->
+    <p><strong>Genre:</strong> <span id="book-genre">{{ book.genre }}</span></p>
+
+    <!-- Description -->
+    <p><strong>Description:</strong> <span id="book-description">{{ book.description }}</span></p>
+
+    <!-- Publication Date -->
+    <p><strong>Publication Date:</strong> <span id="book-publication-date">{{ book.publication_date }}</span></p>
+
+    <!-- ISBN -->
+    <p><strong>ISBN:</strong> <span id="book-isbn">{{ book.isbn }}</span></p>
+
+    <!-- Cover Image -->
+    {% if book.cover_image %}
+    <img id="book-cover-image" src="{{ book.cover_image.url }}" alt="{{ book.title }}" class="img-fluid">
+    {% else %}
+    <p>No cover image available.</p>
+    {% endif %}
+
+    <!-- Action Buttons -->
+    <div class="mt-4">
+        <a href="{% url 'edit_book' book.pk %}" class="btn btn-warning">Edit</a>
+        <a href="{% url 'delete_book' book.pk %}" class="btn btn-danger">Delete</a>
+    </div>
+</div>
+{% endblock %}
